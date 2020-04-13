@@ -1,12 +1,14 @@
+require('dotenv').config()
+
 module.exports = {
   dev: {
     client: 'mssql',
     connection: {
-      host: '67.61.247.116',
-      port: 49170,
-      user: 'tadmin',
-      password: 'test3698',
-      database: 'TEST2DB'
+      host: process.env.KNEX_HOST,
+      port: Number(process.env.KNEX_PORT),
+      user: process.env.KNEX_USER,
+      password: process.env.KNEX_PASS,
+      database: process.env.KNEX_DB
     }
   }
 }
