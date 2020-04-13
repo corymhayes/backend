@@ -1,0 +1,23 @@
+{
+  "name": "objection-test",
+  "version": "1.0.0",
+  "main": "app.js",
+  "license": "MIT",
+  "dependencies": {
+    "@koa/cors": "^3.0.0",
+    "express": "^4.17.1",
+    "knex": "^0.20.6",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "mssql": "^6.0.1",
+    "objection": "^2.0.10"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon --watch"
+  }
+}
