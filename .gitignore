@@ -1,4 +1,5 @@
 .env
-node_modules
-notes.txt
-yarn-error.log
+.env.test
+node_modules/
+*.txt
+*.log
