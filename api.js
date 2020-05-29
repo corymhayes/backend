@@ -6,7 +6,7 @@ const MPC = require('./models/mpc')
 const JCTBTY = require('./models/jctbty')
 
 module.exports = router => {
-  router.get('/api/:company', async ctx => {
+  router.get('/:company', async ctx => {
     const comp = await Company.query().select('BATTERY').where('COMPANY', '=', ctx.params.company)
     ctx.body = comp
   })
