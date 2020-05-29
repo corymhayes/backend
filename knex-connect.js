@@ -2,11 +2,11 @@ module.exports = {
   dev: {
     client: 'mssql',
     connection: {
-      host: '67.61.247.116',
+      host: '72.24.228.86',
       port: 49170,
       user: 'tadmin',
       password: 'test3698',
-      database: 'TEST2DB'
+      database: 'JCTDATA'
     }
   }
 }
