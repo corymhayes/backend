@@ -8,8 +8,6 @@ const knexConnect = require('./knex-connect');
 const registerApi = require('./api')
 const { Model } = require('objection')
 
-console.log(knexConnect.dev);
-
 const knex = Knex(knexConnect.dev)
 Model.knex(knex);
 
