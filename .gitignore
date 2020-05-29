@@ -2,5 +2,9 @@
 .env.test
 node_modules/
 *.txt
+<<<<<<< HEAD
 *.log
 node_moduless
+=======
+*.log
+>>>>>>> 003e28d1729d1e1fcf3c2ea610becce95cc79749
