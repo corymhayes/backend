@@ -26,8 +26,4 @@ module.exports = router => {
     ctx.body = comp
   })
   
-  // router.get('/api/jct/jctbty', async ctx => {
-  //   const comp = await JCTBTY.query()
-  //   ctx.body = comp
-  // })
 }
