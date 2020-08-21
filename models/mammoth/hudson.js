@@ -1,11 +1,9 @@
 const { Model } = require('objection')
 
-class MPC extends Model{
+class Hudson extends Model{
   static get tableName(){
-    return 'MPC'
+    return 'Hudson'
   }  
 }
 
-
-
-module.exports = MPC
+module.exports = Hudson

@@ -1,3 +1,5 @@
+/* FOR USE WITH PM2 */
+
 module.exports = {
   apps: [{
     name: "api",
@@ -7,7 +9,9 @@ module.exports = {
       "KNEX_PORT": 49170,
       "KNEX_USER": "tadmin",
       "KNEX_PASS": "test3698",
-      "KNEX_DB": "JCTDATA"
+      "KNEX_JCT_DB": "JCTDATA",
+      "KNEX_MAMMOTH_DB": "MAMMOTH",
+      "KNEX_MAVERICK_DB": "MAVERICK"
     }
   }]
 }
