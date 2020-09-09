@@ -1,5 +1,6 @@
 const batteryModel = require('./models/jct/battery')
 const testbatteryModel = require('./models/jct/testbattery')
+const fs = require('fs')
 
 
 module.exports = (router, knex) => {

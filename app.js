@@ -10,21 +10,25 @@ const knexConnect = require('./knex-connect')
 const { Model } = require('objection')
 
 const jctApi = require('./jct-api')
-const mammothApi = require('./mammoth-api')
-const maverickApi = require('./maverick-api')
-
 const jct = Knex(knexConnect.jct)
-const mammoth = Knex(knexConnect.mammoth)
-const maverick = Knex(knexConnect.maverick)
-
 Model.knex(jct)
-Model.knex(mammoth)
-Model.knex(maverick)
-
-
 jctApi(router, jct)
+
+const mammothApi = require('./mammoth-api')
+const mammoth = Knex(knexConnect.mammoth)
+Model.knex(mammoth)
 mammothApi(router, mammoth)
+
+const maverickApi = require('./maverick-api')
+const maverick = Knex(knexConnect.maverick)
+Model.knex(maverick)
 maverickApi(router, maverick)
+
+
+  const reinpusherApi = require('./reinpusher-api')
+  const reinpusher = Knex(knexConnect.reinpusher)
+  Model.knex(reinpusher)
+  reinpusherApi(router, reinpusher)
 
 
 app
