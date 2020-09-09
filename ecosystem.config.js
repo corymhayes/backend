@@ -11,7 +11,8 @@ module.exports = {
       "KNEX_PASS": "test3698",
       "KNEX_JCT_DB": "JCTDATA",
       "KNEX_MAMMOTH_DB": "MAMMOTH",
-      "KNEX_MAVERICK_DB": "MAVERICK"
+      "KNEX_MAVERICK_DB": "MAVERICK",
+      "KNEX_REINPUSHER_DB": "REINPUSHER",
     }
   }]
 }
